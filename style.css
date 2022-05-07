@@ -1,0 +1,140 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* Header Section*/
+#header{
+    background-image: url(brick-wall-google-meet-virtual-background-8q7zdznsxer2wije.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+#header h1{
+    display: block;
+    width: fit-content;
+    font-size: 40px;
+    position: relative;
+    color:transparent;
+    animation: textboxcon .5s ease forwards;
+    animation-delay: 1s;
+}
+#header h1:nth-child(1) {
+    animation-delay: 1.5s;
+}
+#header h1:nth-child(2) {
+    animation-delay: 2.5s;
+}
+#header h1:nth-child(3) {
+    animation-delay: 3.5s;
+}
+#header h1:nth-child(4) {
+    animation-delay: 4.5s;
+}
+#header h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color:pink ;
+    animation: textbox 1s ease;
+    animation-delay: 1s;
+
+} 
+#header h1:nth-child(1) span{
+    animation-delay: 1.5s;
+}
+#header h1:nth-child(2) span{
+    animation-delay: 2.5s;
+}
+#header h1:nth-child(3) span{
+    animation-delay: 3.5s;
+}
+#header h1:nth-child(4) span{
+    animation-delay: 4.5s;
+}
+
+@keyframes textbox{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes textboxcon{
+    100%{
+        color: black;
+    }
+}
+#header .cta{
+    display: inline block;
+    padding: 2px 30px;
+    width: max-content;
+    font-size: 50px;
+    color: orangered;
+    background-color: transparent;
+    border: 10px solid yellow;
+    opacity: 100%;
+    transition: ease;
+    transition-property: background-colour, colour;
+    margin-top: 30px ;
+
+
+}
+#header .cta:hover{
+    color: yellow; 
+    background-color:transparent; 
+}
+.section-services{
+    padding: 3rem 3rem 3rem;
+    color: red;
+ font-size: large; 
+ /* word-wrap: border; */
+ border-radius: 0%;
+word-wrap: break-word;
+text-align: center;
+ border-style: dotted;
+ background-color: #79c2d0;
+ border-color: black;
+ margin-top: 20px;
+}
+
+.service-bottom{
+    text-align: left;
+    font-size: medium;
+}
+#services .service-bottom{
+    background-image: url(Vecteezy_abstract-geometric-1_RD0321-01_generated.jpg);
+    background-size: cover;
+    padding: 30px;
+    margin: 20px 5%;
+    
+}
+.section-services:hover{
+    color: black;
+    background-color: transparent;
+}
+/* contact */
+.container{
+    flex-direction: column;
+margin: 0 auto;
+}
